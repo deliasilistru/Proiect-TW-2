@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon2.jpg" >
+	<meta charset="UTF-8">
+	<meta name="descrierea" content="Cinematografia este tehnica sau arta de a înregistra fotografic unele scene pe un film special și de a le reproduce prin proiectare luminoasă pe un ecran. ">
+	<meta name="keywords" content="Top rated movies, IMDb Rating">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>
+	 Filme si seriale
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="/stiluri/style.css">
+	<link rel="stylesheet" href="/stiluri/style_1000.css" type="text/css" media="screen and (max-width: 1000px)" />
+	<link rel="stylesheet" href="/stiluri/style_700.css" type="text/css" media="screen and (max-width: 700px)" />
+	
+	<script src="js/setinterval.js"></script>
+	
+</head>
+<body>
+	
+	<div class="container">
+	<%-  include('../fragmente/header')  %> <!-- < % - ca sa interpreteze tagurile -->
+	<%-  include('../fragmente/menu')  %>
+
+<main>
+
+<h1>Top Rated Movies</h1>
+		<table id="tabelescu">
+			<thead>
+				<tr>
+					<th>Cover</th>
+					<th>Rank</th>
+					<th>Nume</th>
+					<th>Anul aparitiei</th>
+					<th>IMDb Rating</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img class="imgtab" src="/imagini/inchisoarea_ingerilor.jpg" alt="Inchisoarea ingerilor" title="Inchisoarea ingerilor"></td>
+					<td>1</td>
+					<td>Inchisoarea ingerilor</td>
+					<td>1994</td>
+					<td>9.2</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/nasul.jpg" alt="Nasul" title="Nasul"></td>
+					<td>2</td>
+					<td>Nasul</td>
+					<td>1972</td>
+					<td>9.1</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/nasul2.jpg" alt="Nasul2" title="Nasul II"></td>
+					<td>3</td>
+					<td>Nasul II</td>
+					<td>1974</td>
+					<td>9.0</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/cavalerul_negru.jpg" alt="Cavalerul negru" title="Cavalerul negru"></td>
+					<td>4</td>
+					<td>Cavalerul negru</td>
+					<td>2008</td>
+					<td>9.0</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/12_oameni_furiosi.jpg" alt="12 Oameni maniosi" title="12 oameni maniosi"></td>
+					<td>5</td>
+					<td>12 oameni maniosi</td>
+					<td>1957</td>
+					<td>8.9</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/lista_lui_Schindler.jpg" alt="Lista lui Schindler" title="Lista lui Schindler"></td>
+					<td>6</td>
+					<td>Lista lui Schindler</td>
+					<td>1993</td>
+					<td>8.9</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/Stapanul_inelelor.jpg" alt="Stapanul Inelelor: Intoarcerea Regatului" title="Stapanul Inelelor: Intoarcerea Regatului"></td>
+					<td>7</td>
+					<td>Stapanul Inelelor: Intoarcerea Regatului</td>
+					<td>2003</td>
+					<td>8.9</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/pulp_fiction.jpg" alt="Pulp fiction" title="Pulp Fiction"></td>
+					<td>8</td>
+					<td>Pulp Fiction</td>
+					<td>1994</td>
+					<td>8.9</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/celbun_celrau_celurat.jpg" alt="Cel bun, cel rau, cel urat" title="Cel bun, cel rau, cel urat"></td>
+					<td>9</td>
+					<td>Cel bun, cel rau, cel urat</td>
+					<td>1966</td>
+					<td>8.8</td>
+				</tr>
+				<tr>
+					<td><img class="imgtab" src="/imagini/stapanul_inelelor_1.jpg" alt="Stapanul Inelelor: Fratia Inelului" title="Stapanul Inelelor: Fratia Inelului"></td>
+					<td>10</td>
+					<td>Stapanul Inelelor: Fratia Inelului</td>
+					<td>2001</td>
+					<td>8.8</td>
+				</tr>
+			</tbody>
+			<tfoot>
+			</tfoot>
+		</table>
+		
+		<br><br>
+		
+		
+<button onclick="stopColor()">Opreste</button>
+		
+			
+
+</main>
+<%- include('../fragmente/footer')  %>
+</div>
+	</body>
+</html>

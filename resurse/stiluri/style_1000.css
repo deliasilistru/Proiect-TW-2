@@ -1,0 +1,96 @@
+html{
+		font-size:14px;
+	}
+	.container {
+	width: 100%;
+}
+ .test {
+	width: 100%;
+}
+/*-----galerie statica*/
+
+#gr {
+
+ grid-template-columns: repeat(2,1fr);
+}
+/*-----tabel-----*/
+table#tabelescu,table#tabelescu tr{
+			border:none;
+			padding:0;
+			margin:0;
+			display:block;
+		}
+		table#tabelescu td{
+			display:block;
+			padding:0.2em;
+			box-sizing:border-box; /*ca sa imi includa si paddingul in width;*/
+		}
+		table#tabelescu thead{
+			display:none;
+		}
+		table#tabelescu tbody td:nth-child(1)::before{
+			content:"Cover: ";
+		}
+		table#tabelescu tbody td:nth-child(2)::before{
+			content:"Rank: ";
+		}
+		table#tabelescu tbody td:nth-child(3)::before{
+			content:"Nume: ";
+		}
+		table#tabelescu tbody td:nth-child(4)::before{
+			content:"Anul aparitiei: ";
+		}
+		table#tabelescu tbody td:nth-child(5)::before{
+			content:"IMDb Rating: ";
+		}
+		
+		
+		table#tabelescu td{
+			border-bottom:none;
+			border-top:none;
+			float:left;
+			width:80%;
+			padding-left:2%;
+			padding-right:2%;
+		}
+		table#tabelescu td::before{
+			float:left;
+			width:35%;
+			background:lightgrey;
+			font-weight:bold;
+			margin-right:0.5em;
+			padding:0.1em;
+			line-height:100%;
+		}
+		table#tabelescu td:last-child{
+			border-bottom:1px dashed grey;
+		}
+		table#tabelescu tr:first-child  td:first-child{
+			border-top:1px solid black;
+		}
+		table#tabelescu tr:last-child td:last-child{
+			border-bottom:1px solid black;
+		}
+		/*--meniu---*/
+	
+
+		ul.menu>li:hover ul.submenu{
+			width:100%;
+			left:0px;
+		}
+		
+		ul.menu>li:nth-of-type(even):hover ul.submenu{
+				background:grey;
+		}
+		ul.menu>li:nth-of-type(odd):hover ul.submenu{
+				background:grey;
+		}
+		ul.menu>li:hover ul.submenu>li{
+			float:left;
+			width:100%;
+			border:none;
+		}
+
+
+
+

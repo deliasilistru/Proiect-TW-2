@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon2.jpg" >
+<meta charset="UTF-8">
+<meta name="descrierea" content="Cinematografia este tehnica sau arta de a înregistra fotografic unele scene pe un film special și de a le reproduce prin proiectare luminoasă pe un ecran. ">
+<meta name="keywords" content="Filme, IMDb, Wikipedia">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Filme
+</title>
+	<link rel="stylesheet" type="text/css" href="/stiluri/style.css">
+	<link rel="stylesheet" href="/stiluri/style_1000.css" type="text/css" media="screen and (max-width: 1000px)" />
+	<link rel="stylesheet" href="/stiluri/style_700.css" type="text/css" media="screen and (max-width: 700px)" />
+
+<script src="js/ejs.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+	
+	<div class="container">
+	<%-  include('../fragmente/header')  %> <!-- < % - ca sa interpreteze tagurile --> 
+	<%-  include('../fragmente/menu')  %>
+	
+
+<main>
+		<!-- aici se va afisa continutul neprocesat al JSON-ului -->
+	
+		
+		<p>Filme:</p> <br>
+		
+		<!-- aici se va afisa continutul JSON-ului cu formatul din template-ul definit in script -->
+		<div class="afis" id="afisTemplate">
+    </div>
+	<br><br>
+	
+	<div id="container_butoane">
+	<button id="sterge_gen"> Sterge un anumit gen </button>
+	<button id="sorteaza_durata"> Sorteaza dupa durata </button>
+	<button id="calculeaza_suma"> Calculeaza suma </button>
+	<br><br>
+	<button id="filtru_multiplu"> Filtreaza </button>
+	<label>Alege categoria:
+            <select id="select_multiplu" multiple size="2">
+                <option value="1" selected>Cu acord parental</option>
+                <option value="0" selected>Fara acord parental</option>
+            </select>
+        </label>
+		
+	<br><br>
+	<button id="reset"> Reseteaza </button>
+	
+</main>
+
+<%- include('../fragmente/footer')  %>
+</div>
+	</body>
+</html>

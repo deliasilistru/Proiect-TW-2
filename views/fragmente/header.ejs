@@ -1,0 +1,25 @@
+<header class="test">
+<% if(!locals.username) {  %>
+<h2 style="color: white; ">Aici va veti loga:</h2>
+
+            <form action="/login" method="post" >
+            <label style="color: white; ">
+                Username: <input type="text" ; name="username" value="">
+            </label>
+            <label style="color: white; ">
+                Parola: <input type="password" ; " name="parola" value="">
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+		<a href=" /inregistrare" style="text-decoration:none; color: white; ">Inregistrare</a>
+		<% }
+	else { %>
+	Utilizator logat: <%= locals.username  %>
+	<a href="/logout">Logout</a>
+	<% } %>
+		<br>
+
+
+</header>
+	</header>

@@ -1,0 +1,401 @@
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+} 
+html{
+	font-size: 18px;
+}
+
+body{
+	background-image:url("../imagini/cinematograf.jpg")
+}
+
+ol, ul {
+	list-style: none;
+}
+
+
+/* INCEPUT */
+
+#gif{
+	width:70%;
+	height:auto;
+	margin-left:15%;
+	margin-right:15%
+
+}
+.test {
+	background-image: url("../imagini/banda1.jpg");
+	height: 200px;
+	width: 100%;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	
+}
+
+button
+{
+	background-color: #737373;
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 1rem;
+	padding: 0.5rem 0.5rem;
+}
+
+.container {
+	width: 75%;
+	margin:0 auto;
+	margin-top: 1% ;
+	margin-bottom: 1%;
+	height: auto;
+	background-color: white;
+	border-radius: 20px;
+
+}
+video{
+	width:100%;
+}
+p {margin-left: 15px;
+	text-align: justify;
+	text-indent: 25px;
+	margin-right: 15px;
+}
+ h3{
+	margin-left: 15px;
+	font-size: 1.3rem;
+	font-style: italic;
+	text-indent: 1.2rem;
+	font-weight: bold; 
+}
+#Ist, #tehnl,#com, #sf, #horror, #rom,#actiune, #thriller, #drama, 
+#mister,#anim,#avent, #fantastic,#comrom{
+	text-align: center;
+	font-size: 1.2rem;
+	font-style: italic;
+	text-indent: 1.2rem;
+	font-weight: bold; 
+}
+
+
+	main{
+		padding-left:10%;
+		padding-right:10%;
+		padding-top:50px;
+	}	
+		
+	/* ----------Galerie animata----------------- */
+
+
+#container_animatie{
+	position:relative;
+	overflow:hidden;
+	margin:0 auto;
+  border:1px solid black;
+  width:300px;
+  height:450px;
+  box-sizing:content-box;
+  z-index: 0;
+}
+
+#derulant{
+	display:flex;
+  flex-wrap:nowrap;
+	position: absolute;
+	animation-name:go;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+	animation-duration:20s;
+}
+#derulant>*{
+	flex-shrink: 0;
+  position:relative;
+}
+#container_animatie figure:hover figcaption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:auto;
+  font-size:1.5em;
+  background:rgba(200,200,200,0.5);
+  text-align:center;
+}
+
+#container_animatie *{
+  height:100%;
+  width:auto;
+}
+@keyframes go{
+	0%{
+    	left:0px;
+    }
+	100%{
+		left:-600%;
+	}
+}
+
+
+
+
+/* ------------meniu ------------------*/
+
+nav{   width: 100%;
+	  padding:0px;
+	  background-color:grey;
+	  height: 1.5rem;
+	      z-index: 2;
+	}
+.meniu{
+	width:100%;
+}
+	
+ul.menu>li, ul.menu>li>ul.submenu>li{
+		display:block;
+		font-size:1.2rem;
+		font-weight:bold;
+		height:1.5rem;
+		line-height:1.5rem;
+		text-align:center;		
+		list-style-type:none;
+		overflow:hidden;
+		text-decoration: none;
+	}
+	
+ul.menu>li{
+	 float:left;
+	 width:25%;
+	}
+
+	
+ul.submenu>li{
+	 width:100%;
+	}
+
+ul.menu>li>a, ul.menu>li>div>a, ul.submenu>li>a{
+		display:block;
+		height:	100%;
+		text-decoration: none;
+		color:black;
+		background:grey;
+	}
+ul.menu>li>ul.submenu{
+		position:relative;
+		top:0px;
+	}
+	ul.menu>li>ul.submenu>li
+	{
+		border-top: 5px #c40000;
+	}
+	ul.menu>li>ul.submenu>li:last-child
+	{
+		border-bottom: 5px #c40000;
+	}
+
+	ul.menu>li>a:hover, ul.menu>li>div>a:hover, ul.submenu>li>a:hover{
+		 background-color: #c40000;
+         color: white;
+	}
+	ul.menu>li:hover{
+		overflow:visible;
+	
+	}
+	
+
+
+
+
+	
+	/*--------tabel---------*/
+	
+.imgtab{
+	width: 45px;
+	height: 67px;
+	margin: 0;
+	vertical-align: middle;
+}
+#tabelescu{
+	border-spacing: 10px;
+}
+	
+	/*--------galerie statica--------*/
+	
+#galerie-statica{
+  grid-area:gr-g-stat;
+}
+#gr {
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+ grid-row-gap:0.5em;
+ grid-column-gap:0.5em;
+}
+#gr img{
+  width: 100%;
+}
+#gr figcaption{
+  text-align:center;
+}
+
+#gr figure:hover {
+  box-shadow: grey 0px 0px 7px;
+}
+
+#gr figure{
+  transition: all 1s linear;
+}
+/*--------- 404 ------- */
+.404
+{
+width: 100%;
+margin-left: 5000px;
+}
+/*---------film json----------*/
+
+
+.afis{    
+    display: grid;
+    border-top: 4px solid whitesmoke;
+    border-bottom: 4px solid whitesmoke;
+    margin-top: 10px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    position: relative;
+}
+
+.templ_film{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    box-sizing: border-box;
+    background-color: rgba(196, 187, 187, 1);
+    border-radius: 5vh;
+    opacity: 0.8;
+
+}
+/*-----aparitie treptata titlu----*/
+
+.Ist
+{
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #404248;
+	text-decoration: none;
+	outline: 0;
+	font-size: 1.4rem;
+}
+#l1,#l2,#l3,#l4,#l5,#l6,#l7{
+    display:inline;
+}
+/*------countdown------*/
+
+.announce
+{
+	width: 100%;
+	position: relative;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	text-align: center;
+	color: grey;
+}
+ 
+.announce h1 
+{
+	text-transform: uppercase;
+	font-size: 40px;
+	margin: 20px;
+	letter-spacing: 10px;
+}
+	/*------------coloane-----------*/
+	
+.coloana {
+	
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+ 
+}
+/* ----------footer---------- */
+
+
+footer
+{   margin-top:4rem;
+	width:100%;
+	padding: 20px 0;
+	background-color: grey;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: block;
+    
+}
+.bibliografie{
+	color: black;
+	margin: 0 auto;
+}
+#link-top{
+  position:fixed;
+  bottom:0.3em;
+  opacity:0.5;
+  right:3em;
+  width:3rem;
+  box-sizing: border-box;
+  height:3rem;
+  line-height:3rem;
+  text-align:center;
+  border:1px solid grey;
+  border-radius:25%;
+  background: rgb(220,220,220);
+}
+#link-top:hover{
+  opacity:1;
+}
+#triunghi{
+  height:0px;
+  width:0;
+  display:inline-block;
+  border-bottom:1.5rem solid grey;
+  border-left:1rem solid transparent;
+  border-right:1rem solid transparent;
+  vertical-align: top;
+  transform: translateY(30%);
+}
+#media{
+	position:inherit;
+	float:right;
+	margin-right: 0.3rem;
+	display: block;
+}
+.social{
+	
+	width: 3rem;
+	height: 3rem;
+	margin-left: 1rem;
+}
+

@@ -1,0 +1,16 @@
+{"lastId":15,"filme":[{"id":0,"nume":"Titanic","gen":"romantic","durata":"195", "acord_parental":"1", "data":"12/19/1997" ,"actori":"Leonardo DiCaprio, Kate Winslet"},
+{"id":1,"nume":"Nasul","gen":"crima","durata":"175", "acord_parental":"1", "data":"03/15/1972" ,"actori":"Marlon Brando, Al Pacino"},
+{"id":2,"nume":"Marele Gatsby","gen":"drama","durata":"142", "acord_parental":"1", "data":"05/01/2013" ,"actori":"Leonardo DiCaprio, Tobey Maguire"},
+{"id":3,"nume":"Razbunatorii: Sfarsitul jocului","gen":"supereroi","durata":"181", "acord_parental":"1", "data":"04/12/2019" ,"actori":"Robert Downey Jr., Chris Evans"},
+{"id":4,"nume":"In cautarea lui Dory","gen":"animatie","durata":"103", "acord_parental":"0", "data":"06/12/2013" ,"actori":"Ellen DeGeneres, Albert Brooks"},
+{"id":5,"nume":"Joker","gen":"crima","durata":"122", "acord_parental":"1", "data":"02/10/2019" ,"actori":"Joaquin Phoenix, Robert De Niro"},
+{"id":6,"nume":"Parazit","gen":"comedie","durata":"132", "acord_parental":"1", "data":"30/05/2019" ,"actori":"Kang-ho Song, Sun-kyun Lee"},
+{"id":7,"nume":"Gangsteri cu stil","gen":"actiune","durata":"113", "acord_parental":"1", "data":"01/01/2020" ,"actori":"Matthew McConaughey, Charlie Hunnman"},
+{"id":8,"nume":"1917: Speranta si moarte","gen":"Drama","durata":"119", "acord_parental":"1", "data":"04/12/2019" ,"actori":"Dean-Charles Chapman, George MacKay"},
+{"id":9,"nume":"Lupul de pe Wall Street","gen":"Drama","durata":"180", "acord_parental":"1", "data":"10/01/2014" ,"actori":"Leonardo DiCaprio, Margot Robbie"},
+{"id":10,"nume":"Clueless","gen":"comedie","durata":"97", "acord_parental":"1", "data":"19/07/1995" ,"actori":"Alicia Silverstone, Stacey Dash"},
+{"id":11,"nume":"Tacerea mieilor","gen":"crima","durata":"118", "acord_parental":"1", "data":"14/02/1991" ,"actori":"Jodie Foster, Anthony Hopkins"},
+{"id":12,"nume":"Pulp Fiction","gen":"crima","durata":"154", "acord_parental":"1", "data":"10/10/1994" ,"actori":"John Travolta, Uma Thurman"},
+{"id":13,"nume":"Jumanji: Aventura in jungla","gen":"actiune","durata":"119", "acord_parental":"1", "data":"05/12/2017" ,"actori":"Dwayne Johnson, Karen Gillan"},
+{"id":14,"nume":"Coco","gen":"animatie","durata":"105", "acord_parental":"0", "data":"27/10/2017" ,"actori":"Anthony Gonzalez, Gael Garcia Bernal"}
+]}

@@ -1,0 +1,16 @@
+{"lastId":15,"filme":[{"id":1,"nume":"Titanic123","gen":"romantic","durata in minute ":"195", "acord parental"="1", "data"="12/19/1997" ,"actori"="Leonardo DiCaprio, Kate Winslet"},
+{"id":2,"nume":"Nasul","gen":"crima","durata in minute ":"175", "acord parental"="1", "data"="03/15/1972" ,"actori"="Marlon Brando, Al Pacino"},
+{"id":3,"nume":"Marele Gatsby","gen":"drama","durata in minute ":"142", "acord parental"="1", "data"="05/01/2013" ,"actori"="Leonardo DiCaprio, Tobey Maguire"},
+{"id":4,"nume":"Razbunatorii: Sfarsitul jocului","gen":"supereroi","durata in minute ":"181", "acord parental"="1", "data"="04/12/2019" ,"actori"="Robert Downey Jr., Chris Evans"},
+{"id":5,"nume":"In cautarea lui Dory","gen":"animatie","durata in minute ":"103", "acord parental"="0", "data"="06/12/2013" ,"actori"="Ellen DeGeneres, Albert Brooks"},
+{"id":6,"nume":"Joker","gen":"crima","durata in minute ":"122", "acord parental"="1", "data"="02/10/2019" ,"actori"="Joaquin Phoenix, Robert De Niro"},
+{"id":7,"nume":"Parazit","gen":"comedie","durata in minute ":"132", "acord parental"="1", "data"="30/05/2019" ,"actori"="Kang-ho Song, Sun-kyun Lee"},
+{"id":8,"nume":"Gangsteri cu stil","gen":"actiune","durata in minute ":"113", "acord parental"="1", "data"="01/01/2020" ,"actori"="Matthew McConaughey, Charlie Hunnman"},
+{"id":9,"nume":"1917: Speranta si moarte","gen":"Drama","durata in minute ":"119", "acord parental"="1", "data"="04/12/2019" ,"actori"="Dean-Charles Chapman, George MacKay"},
+{"id":10,"nume":"Lupul de pe Wall Street","gen":"Drama","durata in minute ":"180", "acord parental"="1", "data"="10/01/2014" ,"actori"="Leonardo DiCaprio, Margot Robbie"},
+{"id":11,"nume":"Clueless","gen":"comedie","durata in minute ":"97", "acord parental"="1", "data"="19/07/1995" ,"actori"="Alicia Silverstone, Stacey Dash"},
+{"id":12,"nume":"Tacerea mieilor","gen":"crima","durata in minute ":"118", "acord parental"="1", "data"="14/02/1991" ,"actori"="Jodie Foster, Anthony Hopkins"},
+{"id":13,"nume":"Pulp Fiction","gen":"crima","durata in minute ":"154", "acord parental"="1", "data"="10/10/1994" ,"actori"="John Travolta, Uma Thurman"},
+{"id":14,"nume":"Jumanji: Aventura in jungla","gen":"actiune","durata in minute ":"119", "acord parental"="1", "data"="05/12/2017" ,"actori"="Dwayne Johnson, Karen Gillan"},
+{"id":15,"nume":"Coco","gen":"animatie","durata in minute ":"105", "acord parental"="0", "data"="27/10/2017" ,"actori"="Anthony Gonzalez, Gael Garcia Bernal"}
+]}

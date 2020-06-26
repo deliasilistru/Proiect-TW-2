@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon2.jpg" >
+	<meta charset="UTF-8">
+	<meta name="descrierea" content="Cinematografia este tehnica sau arta de a înregistra fotografic unele scene pe un film special și de a le reproduce prin proiectare luminoasă pe un ecran. ">
+	<meta name="keywords" content="Cinematografie, Film, Arta, Tehnica cinematografica ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>
+		Cinematografia
+	</title>
+
+<link rel="stylesheet" type="text/css" href="/stiluri/style.css">
+<link rel="stylesheet" href="/stiluri/style_1000.css" type="text/css" media="screen and (max-width: 1000px)" />
+<link rel="stylesheet" href="/stiluri/style_700.css" type="text/css" media="screen and (max-width: 700px)" />
+</head>
+
+<body>
+
+	
+	<div class="container">
+	<%-  include('../fragmente/header')  %> <!-- < % - ca sa interpreteze tagurile -->
+	<%-  include('../fragmente/menu')  %>
+	
+	
+<main>
+<% if(!locals.rsstatus) { %>
+ <form action="/inreg" method="post">
+        <label>
+            <h2>Nume:</h2>
+            <input type="text" name="nume" >
+        </label>
+		<label>
+            <h2>Prenume:</h2>
+            <input type="text" name="prenume" >
+        </label>
+		<label>
+            <h2>Username:</h2>
+            <input type="text" name="username" >
+        </label>
+        <label>
+            <h2>Parola:</h2>
+            <input type="password" name="parola" >
+        </label>
+		<label>
+            <h2>Reintroduceti parola:</h2>
+            <input type="password" name="rparola" >
+        </label>
+        <label>
+            <h2>Preferinta </h2>
+            <span>
+                filme
+                <input value="Filme" type="radio" name="preferinta" >
+				seriale
+                <input value="Seriale" type="radio" name="preferinta" >
+            </span>
+        </label>
+        <label>
+            <h2>Cate filme vedeti in medie intr-o saptamana?</h2>
+            <input type="number" name="nr" >
+        </label>
+        <label>
+            <h2>Data nasterii</h2>
+            <input type="date" name="data" >
+        </label>
+       <h2>Genuri preferate</h2>
+            <label>
+                <span>
+                Comedie
+                <input value="Comedie" type="checkbox" name="gen" >
+                </span>
+            </label>
+            <label>
+                <span>
+                Drama
+                <input value="Drama" type="checkbox" name="gen">
+                </span>
+            </label>
+            <label>
+                <span>
+                Aventura
+                <input value="Aventura" type="checkbox" name="gen">
+                </span>
+            </label>
+            <label>
+                <span>
+                Romantic
+                <input value="Romantic" type="checkbox" name="gen" >
+                </span>
+            </label>
+            <label>
+                <span>
+                Horror
+                <input value="Horror" type="checkbox" name="gen">
+                </span>
+            </label>
+            <button>Submit</button>
+    </form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+</main>	
+
+<%- include('../fragmente/footer')  %>
+</div>
+	</body>
+</html>

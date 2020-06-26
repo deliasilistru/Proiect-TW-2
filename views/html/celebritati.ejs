@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon2.jpg" >
+	<meta charset="UTF-8">
+	<meta name="descrierea" content="Cinematografia este tehnica sau arta de a înregistra fotografic unele scene pe un film special și de a le reproduce prin proiectare luminoasă pe un ecran. ">
+	<meta name="keywords" content="Angelina Jolie, Johnny Depp, Actori">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>
+		Celebritati
+	</title>
+	
+	<link rel="stylesheet" type="text/css" href="/stiluri/style.css">
+	<link rel="stylesheet" href="/stiluri/style_1000.css" type="text/css" media="screen and (max-width: 1000px)" />
+    <link rel="stylesheet" href="/stiluri/style_700.css" type="text/css" media="screen and (max-width: 700px)" />
+	
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	
+	<div class="container">
+	
+	<%-  include('../fragmente/header')  %> <!-- < % - ca sa interpreteze tagurile -->
+	<%-  include('../fragmente/menu')  %>
+	
+
+<main>
+
+	<section id="galerie-statica">
+		<h2>Actori celebri</h2>
+        <div id="gr">
+			<figure>
+				<img class="imggal" src="/imagini/brad-pitt.jpg" alt="Brad Pitt" title="Brad Pitt">
+				<figcaption>Brad Pitt</figcaption>
+			</figure>
+			<figure>
+				<img class="imggal" src="/imagini/angelina-jolie.jpg" alt="Angelina Jolie" title="Angelina Jolie">
+				<figcaption>Angelina Jolie</figcaption>
+			</figure>
+			<figure>
+				<img class="imggal" src="/imagini/johnny-depp.jpg" alt="Johnny Depp" title="Johnny Depp">
+				<figcaption>Johnny Depp</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/will-smith.jpg" alt="Will Smith" title="Will Smith">
+			    <figcaption>Will Smith</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/julia-roberts.jpg" alt="Julia Roberts" title="Julia Roberts">
+			    <figcaption>Julia Roberts</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/robert-downey-jr.jpg" alt="Robert Downey jr." title="Robert Downey Jr.">
+			    <figcaption>Robert Downey Jr.</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/tom-cruise.jpg" alt="Tom Cruise" title="Tom Cruise">
+			    <figcaption>Tom Cruise</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/sandra-bullock.jpg" alt="Sandra Bullock " title="Sandra Bullock">
+			    <figcaption>Sandra Bullock</figcaption>
+			</figure>
+			<figure>
+			    <img class="imggal" src="/imagini/morgan-freeman.jpg" alt="Morgan Freeman" title="Morgan Freeman">
+			    <figcaption>Morgan Freeman</figcaption>
+			</figure>
+      </div>
+		</section>
+    <div id="separator1"></div>
+    
+    <button id="citate"> Afiseaza citat </button>
+	
+</main>
+<%- include('../fragmente/footer')  %>
+</div>
+	</body>
+</html>

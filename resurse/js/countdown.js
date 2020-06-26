@@ -1,0 +1,21 @@
+const count = new Date("21 sep, 2020 00:00:00").getTime();
+const x = setInterval(function () {
+
+    const now = new Date().getTime();
+    const d = count - now;
+    const days = Math.floor(d / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((d % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    if (d <= 0) {
+        clearInterval(x);
+    }
+
+}, 1000);
+
